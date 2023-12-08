@@ -1,0 +1,17 @@
+version: '3'
+services:
+  apt-exporter:
+    container_name: apt-exporter
+    build:
+      context: .
+    ports:
+      - "9091:9091"
+    restart: always
+    volumes:
+     - /var/lib/apt/lists:/var/lib/apt/lists
+     - /etc/update-notifier:/etc/update-notifier
+     - /bin:/bin
+     - /etc:/etc
+     - /lib:/lib
+     - /lib64:/lib64
+     - /usr:/usr  

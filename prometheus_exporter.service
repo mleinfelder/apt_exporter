@@ -1,0 +1,12 @@
+[Unit]
+Description=Prometheus Exporter Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /caminho/para/prometheus_exporter.py
+WorkingDirectory=/caminho/para/ # Substitua pelo diretório onde o script está localizado
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
