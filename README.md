@@ -61,10 +61,11 @@ Acesse o serviço no browser e informar nome da maquina ou endereço IPv4 ou Ipv
 
 http://localhost:3999/metrics
 
-# HELP update_available Number of available updates 
-# TYPE update_available gauge update_available 0 
-# HELP needs_reboot Indicates whether a system reboot is needed 
-# TYPE needs_reboot gauge needs_reboot 1
+ HELP update_available Number of available updates 
+ TYPE update_available gauge update_available 0 
+ HELP needs_reboot Indicates whether a system reboot is needed 
+ TYPE needs_reboot gauge needs_reboot 1
+
 ## 
 
 By Márcio Felder.
